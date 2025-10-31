@@ -65,6 +65,23 @@ const Projects = [
     ],
   },
   {
+    id: "panzle",
+    title: "Panzle",
+    description:
+      "Panzle is an AI-driven custom software development and automation agency, helping businesses scale by building web and mobile platforms, integrating machine learning/NLP, and designing intuitive user interfaces.",
+    image: "/images/panzleHeroImage.webp",
+    technologies: ["Next.js", "TypeScript"],
+    liveUrl: "https://panzle.com/",
+    githubUrl: "https://github.com/username/cosmic-forge-v1",
+    features: [
+      "Custom software development (web and mobile) tailored to solve specific business problems",
+      "AI integration & automation including ML models, natural language processing and predictive analytics",
+      "Chatbot & virtual assistant development for support, sales and internal operations",
+      "UI/UX design that focuses on engaging user interfaces and seamless experiences",
+      "Data engineering & API design: system integrations, scalable back-ends and secure data flow",
+    ],
+  },
+  {
     id: "720-scores",
     title: "720 Scores",
     description:

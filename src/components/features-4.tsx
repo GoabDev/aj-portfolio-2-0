@@ -19,9 +19,9 @@ export default function Features() {
             Services I Provide
           </h2>
           <p>
-            Lyra is evolving to be more than just the models. It supports an
-            entire to the APIs and platforms helping developers and businesses
-            innovate.
+            I help businesses and startups turn ideas into powerful digital
+            products from web and mobile applications to complete SaaS platforms
+            that scale.
           </p>
         </div>
 
@@ -62,19 +62,6 @@ export default function Features() {
             <p className="text-sm">
               Complete frontend solutions including responsive web applications,
               dashboard interfaces, and interactive user experiences.
-            </p>
-          </div>
-          <div className="space-y-2 col-span-3">
-            <div className="flex items-center gap-2">
-              <Brain className="size-4 text-primary" />
-
-              <h3 className="text-sm font-bold text-primary">
-                Technical Consulting
-              </h3>
-            </div>
-            <p className="text-sm">
-              Code reviews, architecture planning, and technical guidance for
-              development teams looking to modernize their frontend stack.
             </p>
           </div>
         </div>

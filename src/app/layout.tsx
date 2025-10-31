@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Ajogu Joseph Portfolio",
     images: [
       {
-        url: "https://ajogu.vercel.app/og-image.png",
+        url: "https://ajogu.vercel.app/goab-og-img.png",
         width: 1200,
         height: 630,
         alt: "Ajogu Joseph Portfolio",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "Ajogu Joseph | Software Developer",
     description:
       "Mid-Level Software Developer specializing in React ecosystems, crafting scalable and efficient web applications.",
-    images: ["https://ajogu.vercel.app/og-image.png"],
+    images: ["https://ajogu.vercel.app/goab-og-img.png"],
   },
   robots: {
     index: true,
@@ -109,11 +109,6 @@ export const metadata: Metadata = {
     email: false,
     address: false,
     telephone: false,
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
   },
 };
 
