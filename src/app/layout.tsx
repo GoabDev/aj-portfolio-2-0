@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     title: "Ajogu Joseph | Software Developer",
     description:
       "Mid-Level Software Developer specializing in React ecosystems, crafting scalable and efficient web applications.",
-    url: "https://ajogu.vercel.app",
+    url: "https://ajogujoseph.vercel.app",
     siteName: "Ajogu Joseph Portfolio",
     images: [
       {
-        url: "https://ajogu.vercel.app/goab-og-img.png",
+        url: "https://ajogujoseph.vercel.app/goab-og-img.png",
         width: 1200,
         height: 630,
         alt: "Ajogu Joseph Portfolio",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "Ajogu Joseph | Software Developer",
     description:
       "Mid-Level Software Developer specializing in React ecosystems, crafting scalable and efficient web applications.",
-    images: ["https://ajogu.vercel.app/goab-og-img.png"],
+    images: ["https://ajogujoseph.vercel.app/goab-og-img.png"],
   },
   robots: {
     index: true,
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ajogu.vercel.app",
+    canonical: "https://ajogujoseph.vercel.app",
   },
   manifest: "/site.webmanifest",
   verification: {
@@ -76,9 +76,9 @@ export const metadata: Metadata = {
   },
   bookmarks: ["/favicon.ico"],
   category: "technology",
-  authors: [{ name: "Ajogu Joseph", url: "https://ajogu.vercel.app" }],
+  authors: [{ name: "Ajogu Joseph", url: "https://ajogujoseph.vercel.app" }],
   publisher: "Ajogu Joseph",
-  metadataBase: new URL("https://ajogu.vercel.app"),
+  metadataBase: new URL("https://ajogujoseph.vercel.app"),
   applicationName: "Ajogu Joseph Portfolio",
   generator: "Next.js",
   keywords: [

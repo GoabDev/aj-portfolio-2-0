@@ -106,7 +106,7 @@ const defaultPlatforms: Platform[] = [
     name: "Github",
     domain: "github.com",
     icon: <GithubIcon className="h-5 w-5" />,
-    url: "https://github.com/ITACHI1117",
+    url: "https://github.com/GoabDev",
   },
   {
     name: "LinkedIn",
