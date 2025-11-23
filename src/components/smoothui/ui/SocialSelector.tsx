@@ -218,7 +218,7 @@ export default function SocialSelector({
               : selectedPlatform.name == "LinkedIn"
               ? `Joseph Ajogu`
               : selectedPlatform.name == "Github"
-              ? `ITACHI1117`
+              ? `GoabDev`
               : `goabdev@gmail.com`}
           </a>
         </motion.p>
