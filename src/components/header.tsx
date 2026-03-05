@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
-import { Logo, LogoIcon, LogoStroke } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
+import DocumentModal from "@/components/document-modal";
 
 const menuItems = [
   { name: "About", href: "#about" },
@@ -16,6 +16,9 @@ const menuItems = [
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [activeDocument, setActiveDocument] = React.useState<
+    "cv" | "resume" | null
+  >(null);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +31,20 @@ export const HeroHeader = () => {
   // const handleLinkClick = () => {
   //   menuState && setMenuState(false);
   // }
+
+  const openDocument = (document: "cv" | "resume") => {
+    setActiveDocument(document);
+    setMenuState(false);
+  };
+
+  const documentConfig = {
+    cv: { title: "Curriculum Vitae", url: "/docs/cv.pdf" },
+    resume: { title: "Resume", url: "/docs/resume.pdf" },
+  } as const;
+
+  const selectedDocument =
+    activeDocument === null ? null : documentConfig[activeDocument];
+
   return (
     <header>
       <nav
@@ -95,47 +112,40 @@ export const HeroHeader = () => {
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                 <Button
-                  asChild
                   variant="outline"
                   size="sm"
                   className={cn(isScrolled && "lg:hidden")}
+                  onClick={() => openDocument("cv")}
                 >
-                  <Link
-                    target="_blank"
-                    href="https://drive.google.com/file/d/1Pk2wXWk6uyR35EX_84vFu2p8clilaH80/view?usp=drive_link"
-                  >
-                    <span>CV</span>
-                  </Link>
+                  <span>CV</span>
                 </Button>
                 <Button
-                  asChild
                   size="sm"
                   className={cn(isScrolled && "hidden")}
+                  onClick={() => openDocument("resume")}
                 >
-                  <Link
-                    target="_blank"
-                    href="https://drive.google.com/file/d/133FW4ERAmYxrZb-Wul6AFzpN_Ka_vV2r/view?usp=drive_link"
-                  >
-                    <span>Resume</span>
-                  </Link>
+                  <span>Resume</span>
                 </Button>
                 <Button
-                  asChild
                   size="sm"
                   className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
+                  onClick={() => openDocument("resume")}
                 >
-                  <Link
-                    target="_blank"
-                    href="https://drive.google.com/file/d/133FW4ERAmYxrZb-Wul6AFzpN_Ka_vV2r/view?usp=drive_link"
-                  >
-                    <span>Resume</span>
-                  </Link>
+                  <span>Resume</span>
                 </Button>
               </div>
             </div>
           </div>
         </div>
       </nav>
+      {selectedDocument && (
+        <DocumentModal
+          isOpen={Boolean(activeDocument)}
+          title={selectedDocument.title}
+          pdfUrl={selectedDocument.url}
+          onClose={() => setActiveDocument(null)}
+        />
+      )}
     </header>
   );
 };

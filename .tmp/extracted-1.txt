@@ -1,0 +1,111 @@
+AJOGU JOSEPH  
+Lagos, Nigeria.  
+Email: ajogujoseph0317@gmail.com   
+Phone: +2348146821934  
+  
+ 
+  
+PROFESSIONAL SUMMARY  
+Dynamic and results-oriented software developer with expertise in cuttingedge web and mobile 
+development technologies. Proficient in utilizing JavaScript frameworks such as React.js and 
+React Native to deliver innovative, high-performance solutions.  
+Experienced in collaborating with cross-functional teams to produce high-quality projects that 
+meet client objectives and enhance user satisfaction. Demonstrates strong proficiency in 
+implementing responsive design principles to ensure seamless functionality across devices, 
+improving user engagement and experience. Recognized for excellent problem-solving 
+abilities, creativity, and a dedication to continuous learning and professional growth. Passionate 
+about modernizing workflows and driving technological innovation to support business 
+success.  
+  
+ 
+  
+TECH STACK  
+• Programming Languages: JavaScript, Typescript, Python, PHP, SQL, HTML, CSS  
+• Frameworks & Libraries: React, React Native, NextJs, Node.js, Firebase  
+• Web Development: Frontend (HTML, CSS, Tailwind CSS, JavaScript, React, Webflow)  
+• Mobile Development: React Native, Expo    
+• UI/UX Design: Figma, Photoshop, Canva   
+• Web Automation: Python scripting, Web scraping   
+• API Integration: Expertise in working with various APIs  
+• V ersion Control: Git, GitHub  
+  
+ 
+  
+PROFESSIONAL EXPERIENCE  
+  
+Mission for Deliverance Christ Ministry – (Contract based):  
+January 2023 – March 2023  
+  
+
+• Designed a mobile app giving members access to the Sunday school manual, reducing 
+manual printing of manuals.  
+• Updating the application by adding dark mode feature and larger text based on users 
+requests.  
+  
+React Js Hackathon (Care Finder Application):  
+April 2023 – April 2023  
+  
+• Participated in a comprehensive full stack web development program, mastering key 
+technologies and tools.  
+• Gained hands-on experience in React Js, contributing to a collaborative project that 
+improved team coding standards.  
+• Implemented responsive design principles, resulting in a 30% improvement in website 
+usability.  
+• Enhanced user interfaces and user experiences, boosting overall client satisfaction by 
+20%.  
+  
+Alliance and General Insurance – IT Support Intern:  
+May 2023 – November 2023  
+  
+• Designed Software Tools for automating the process of updating and correction of 
+policies on the company platform and on Nigerian Insurance Industry Database (NIID), 
+minimizing manual effort.  
+• Designed Software Tools for automating the process of pushing policies on the company 
+platform to Nigerian Insurance Industry Database (NIID), minimizing manual effort.  
+• Provided support by assisting staffs with tech related issues  
+  
+Feast-Hub – Full stack Developer (Contract-based):  
+May 2024 – June 2024  
+  
+• Led the development and deployment of the Restaurant mobile App.  
+• Designed and implemented user-friendly interfaces, reducing bounce rates by 10%. 
+  
+Ensured cross-platform compatibility and optimized performance.  
+  
+  
+  
+Alliance and General Insurance – IT Support Intern:  
+July 2024 – December 2024  
+  
+• Monitoring and updating the software Tools for automating the process of updating and 
+correction of policies on the company platform and on Nigerian Insurance Industry 
+Database (NIID), minimizing manual effort.  
+• Monitoring and updating the Software Tools for automating the pr ocess of pushing 
+policies on the company platform to Nigerian Insurance Industry Database (NIID), 
+minimizing manual effort.  
+• Developed a streamlined Help Desk application designed to enhance efficiency for 
+company staff by simplifying the process of reporting and resolving issues.  
+  
+
+  
+ 
+EDUCATION & TRAINING  
+Crawford University | BSc in Computer Science | Igbesa, Ogun State  
+November 2020 – Decmber 2024  
+Millbank Hall | Lagos  
+November 2015 – July 2020   
+  
+ 
+  
+LANGUAGES  
+  
+• English – Fluent  
+ 
+  
+SOFT SKILLS  
+  
+• Effective time management  
+• Problem solving  
+• Creativity  
+• Teamwork  
+• Excellent communication

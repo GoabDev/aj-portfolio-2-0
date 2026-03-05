@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import { GithubIcon, LinkedinIcon } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 
 interface XIconProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
@@ -100,19 +100,13 @@ const defaultPlatforms: Platform[] = [
     name: "Gmail",
     domain: "mail.google.com",
     icon: <GmailIcon className="h-5 w-5" />,
-    url: "goabdev@gmail.com",
+    url: "ajogujoseph0317@gmail.com",
   },
   {
     name: "Github",
     domain: "github.com",
     icon: <GithubIcon className="h-5 w-5" />,
     url: "https://github.com/GoabDev",
-  },
-  {
-    name: "LinkedIn",
-    domain: "linkedin.com",
-    icon: <LinkedinIcon className="h-5 w-5" />,
-    url: "https://ng.linkedin.com/in/joseph-ajogu-5434a4261",
   },
 ];
 
@@ -138,10 +132,10 @@ export default function SocialSelector({
 
   return (
     <div
-      className={` my-4 w-full max-w-2xl text-center md:text-start ${className}`}
+      className={`my-4 w-full max-w-2xl text-center ${className}`}
     >
       <div className="space-y-6">
-        <div className="flex items-center justify-center md:items-start md:justify-start">
+        <div className="flex items-center justify-center">
           <div className="relative flex w-fit items-center justify-center gap-4">
             {platforms.map((platform) => (
               <button
@@ -179,20 +173,20 @@ export default function SocialSelector({
           </div>
         </div>
         <motion.p
-          initial={{ opacity: 0, y: 10, filter: "blur(5px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          exit={{ opacity: 0, y: -10, filter: "blur(5px)" }}
-          transition={{ duration: 0.3 }}
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -6 }}
+          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="text-foreground text-md"
         >
           {selectedPlatform.name == "X" ? `Updates on ` : `Get In Touch `}
           <span className="text-foreground font-medium">
             <motion.a
               key={selectedPlatform.domain}
-              initial={{ opacity: 0, y: 10, filter: "blur(5px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              exit={{ opacity: 0, y: -10, filter: "blur(5px)" }}
-              transition={{ duration: 0.3 }}
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               href={selectedPlatform.url}
               target="_blank"
               rel="noopener noreferrer"
@@ -215,11 +209,9 @@ export default function SocialSelector({
               ? `@${handle}`
               : selectedPlatform.name == "Whatsapp"
               ? `+2348146821934`
-              : selectedPlatform.name == "LinkedIn"
-              ? `Joseph Ajogu`
               : selectedPlatform.name == "Github"
               ? `GoabDev`
-              : `goabdev@gmail.com`}
+              : `ajogujoseph0317@gmail.com`}
           </a>
         </motion.p>
       </div>

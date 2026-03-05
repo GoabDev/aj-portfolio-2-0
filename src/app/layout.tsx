@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -19,30 +19,60 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ajogu Joseph | Software Developer",
+  metadataBase: new URL("https://ajogujoseph.vercel.app"),
+  title: {
+    default: "Ajogu Joseph | Full-Stack & Frontend Developer",
+    template: "%s | Ajogu Joseph",
+  },
   description:
-    "Mid-Level Software Developer specializing in React ecosystems, crafting scalable and efficient web applications.",
+    "Portfolio of Ajogu Joseph, a Frontend and Full-Stack Developer building scalable web apps, internal business systems, automation tools, and modern product experiences.",
+  applicationName: "Ajogu Joseph Portfolio",
+  authors: [{ name: "Ajogu Joseph", url: "https://ajogujoseph.vercel.app" }],
+  creator: "Ajogu Joseph",
+  publisher: "Ajogu Joseph",
+  category: "technology",
+  alternates: {
+    canonical: "https://ajogujoseph.vercel.app",
+  },
+  keywords: [
+    "Ajogu Joseph",
+    "Frontend Developer",
+    "Full-Stack Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Node.js Developer",
+    "Supabase Developer",
+    "TypeScript Developer",
+    "Software Developer Nigeria",
+    "Lagos Software Developer",
+    "Web Application Developer",
+    "Internal Business Systems",
+    "Automation Engineer",
+    "Portfolio",
+  ],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+  manifest: "/site.webmanifest",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: "Ajogu Joseph | Software Developer",
+    title: "Ajogu Joseph | Full-Stack & Frontend Developer",
     description:
-      "Mid-Level Software Developer specializing in React ecosystems, crafting scalable and efficient web applications.",
+      "Explore projects by Ajogu Joseph across internal enterprise systems, automation tools, and high-performance web interfaces.",
     url: "https://ajogujoseph.vercel.app",
     siteName: "Ajogu Joseph Portfolio",
     images: [
       {
-        url: "https://ajogujoseph.vercel.app/goab-og-img.png",
+        url: "https://ajogujoseph.vercel.app/images/social-portfolio-og-1200x630.jpg",
         width: 1200,
         height: 630,
-        alt: "Ajogu Joseph Portfolio",
+        alt: "Ajogu Joseph - Developer Portfolio",
       },
     ],
     locale: "en-US",
@@ -50,10 +80,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ajogu Joseph | Software Developer",
+    title: "Ajogu Joseph | Full-Stack & Frontend Developer",
     description:
-      "Mid-Level Software Developer specializing in React ecosystems, crafting scalable and efficient web applications.",
-    images: ["https://ajogujoseph.vercel.app/goab-og-img.png"],
+      "Portfolio featuring web apps, internal systems, and automation projects by Ajogu Joseph.",
+    images: [
+      "https://ajogujoseph.vercel.app/images/social-portfolio-x-1200x628.jpg",
+    ],
   },
   robots: {
     index: true,
@@ -66,50 +98,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "https://ajogujoseph.vercel.app",
-  },
-  manifest: "/site.webmanifest",
-  verification: {
-    google: "google-site-verification-code",
-    yandex: "yandex-site-verification-code",
-  },
   bookmarks: ["/favicon.ico"],
-  category: "technology",
-  authors: [{ name: "Ajogu Joseph", url: "https://ajogujoseph.vercel.app" }],
-  publisher: "Ajogu Joseph",
-  metadataBase: new URL("https://ajogujoseph.vercel.app"),
-  applicationName: "Ajogu Joseph Portfolio",
-  generator: "Next.js",
-  keywords: [
-    "Ajogu Joseph",
-    "AJ__ITACHI",
-    "Joseph Ajogu",
-    "Ajogu",
-    "Ajogu Developer",
-    "Software Developer",
-    "React Developer",
-    "Frontend Developer",
-    "Web Developer",
-    "JavaScript Developer",
-    "TypeScript Developer",
-    "Full-Stack Developer",
-    "Portfolio",
-    "SaaS Developer",
-    "Mobile App Developer",
-    "Next.js Developer",
-    "Node.js Developer",
-    "Tech Enthusiast",
-    "UI/UX Designer",
-    "Open Source Contributor",
-  ],
+};
+
+export const viewport: Viewport = {
   themeColor: "#ffffff",
   colorScheme: "light dark",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
 };
 
 export default function RootLayout({

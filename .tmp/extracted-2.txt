@@ -1,0 +1,36 @@
+Ajogu Joseph 
+Nigeria | +234 8146821934 | ajogujoseph0317@gmail.com | Portfolio | LinkedIn | GitHub | X 
+TECHNICAL SKILLS 
+• Programming Languages: TypeScript, JavaScript, Python 
+• Frameworks/Libraries: React, React Native, Expo, Next.js, TanStack Query, Express.js, REST APIs 
+• Databases: MongoDB, Firebase 
+• DevOps/Tools: Git, GitHub, Docker 
+• UI/UX Design: Figma, Photoshop, Canva 
+EXPERIENCE 
+Software Developer (Contract) | Mission for Deliverance Christ Ministry January 2023 – March 2023 
+• Designed mobile app providing digital access to Sunday school manuals, eliminating physical printing needs 
+• Enhanced UX by implementing dark mode and adjustable text sizing based on user feedback and accessibility requirements 
+IT Support Intern | Alliance and General Insurance May 2023 – November 2023 
+• Developed automation tools for policy updates on company platform and Nigerian Insurance Industry Database (NIID) 
+• Built data synchronization solutions improving accuracy and compliance, reducing manual processing time by 60% 
+• Provided technical support to staff members, resolving hardware and software issues to maintain operational efficiency 
+Software Developer (Contract) | 720Scores 
+• Redesigned company website using UI/UX design principles in Figma, improving user engagement and visual appeal 
+• Implemented complete frontend redesign with React, optimizing site performance and responsiveness across devices 
+• Developed squad builder feature enhancing user interaction and team management capabilities for sports enthusiasts 
+Frontend Developer | Cosmic Forge 
+• Collaborated with development team to implement frontend architecture for comprehensive healthcare application 
+• Developed wallet system interface for doctors, enabling secure financial transactions within the platform 
+• Implemented site referral system creating seamless user onboarding flows and increasing platform adoption 
+PROJECTS 
+Cosmic Forge HealthNet | React, TypeScript, Firebase | cosmicforge-healthnet.com 
+• Healthcare management platform serving real medical professionals with patient data management and appointment 
+scheduling 
+• Implemented HIPAA-compliant interface ensuring data security and accessibility across all devices 
+Academia AI | React, Node.js, AI Integration | academiai.vercel.app 
+• AI-powered academic recommendation system providing personalized program recommendations for students 
+• Built matching algorithms and interactive university comparison tools for informed academic decision-making 
+CloudClip | React Native, Expo, Firebase | clipcloud-gamma.vercel.app 
+• Short-form video platform with social features including content discovery, user profiles, and following system 
+• Created scalable architecture supporting video upload, sharing, and real-time user engagement 
+EDUCATION Bsc |Crawford University November 2020 – December 2024 Ogun State, Nigeria

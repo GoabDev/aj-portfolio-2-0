@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { HeroHeader } from "./header";
 import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
@@ -68,36 +66,59 @@ const skilsData = [
 ];
 
 export default function HeroSection() {
+  const smoothEase: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
   return (
     <>
       <HeroHeader />
       <main className="overflow-x-hidden">
         <section>
           <div className="pb-24 pt-12 md:pb-32 lg:pb-56 lg:pt-44">
-            <div className="relative mx-auto flex max-w-6xl flex-col px-6 lg:block">
-              <div className="mx-auto max-w-lg text-center lg:ml-0 lg:w-1/2 lg:text-left">
-                <motion.h1 
-                  initial={{ opacity: 0, y: 20 }}
+            <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6">
+              <div className="mx-auto max-w-4xl text-center">
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
-                  className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 xl:text-7xl text-primary"
+                  transition={{ duration: 0.7, ease: smoothEase }}
+                  className="will-change-transform"
                 >
-                  Building Digital Experiences That Scale
-                </motion.h1>
-                <motion.p 
-                  initial={{ opacity: 0, y: 20 }}
+                  <div className="mt-8 flex flex-col items-center justify-center gap-6 lg:mt-16">
+                    <h1 className="max-w-4xl text-balance text-6xl font-medium leading-[1.12] text-primary md:text-7xl md:leading-[1.1] xl:text-8xl xl:leading-[1.08]">
+                      Building Digital Experiences That Scale
+                    </h1>
+                  </div>
+                </motion.div>
+                {/* <div className="mx-auto inline-flex w-fit items-center gap-3 rounded-2xl border border-primary/20 bg-background/70 px-4 py-3 shadow-sm backdrop-blur-sm">
+                  <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-primary/20">
+                    <Image
+                      src="/images/Image.webp"
+                      alt="Profile"
+                      fill
+                      sizes="48px"
+                      className="object-cover"
+                      quality={70}
+                      priority
+                    />
+                  </div>
+                  <p className="text-base font-semibold text-primary md:text-lg">
+                    AjoguJoseph
+                  </p>
+                </div> */}
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-                  className="mt-8 max-w-2xl text-pretty text-lg"
+                  transition={{ duration: 0.7, delay: 0.1, ease: smoothEase }}
+                  className="mx-auto mt-8 max-w-2xl text-pretty text-lg"
                 >
                   Mid-Level Software Developer specializing in React ecosystems,
                   mobile applications, and SaaS platforms with years of
                   experience crafting user-centered solutions
                 </motion.p>
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+                  transition={{ duration: 0.7, delay: 0.2, ease: smoothEase }}
+                  className="flex justify-center"
                 >
                   <SocialSelector />
                 </motion.div>
@@ -120,22 +141,6 @@ export default function HeroSection() {
                   </Button>
                 </div> */}
               </div>
-              <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-                  className="-z-10 order-first ml-auto w-full sm:h-96 lg:absolute lg:inset-0 lg:-right-20 lg:-top-56 lg:order-last lg:h-max lg:w-2xl"
-              >
-                  <Image
-                    className="rounded-full object-cover w-full h-full lg:object-contain dark:mix-blend-lighten dark:invert-0"
-                    src="/images/Image.webp"
-                    alt="My Image"
-                    height="4000"
-                    width="3000"
-                    loading="lazy"
-                    quality={70}
-                  />
-              </motion.div>
             </div>
           </div>
         </section>
