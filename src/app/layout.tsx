@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio featuring web apps, internal systems, and automation projects by Ajogu Joseph.",
     images: [
-      "https://ajogujoseph.vercel.app/images/social-portfolio-x-1200x628.jpg",
+      "https://ajogujoseph.vercel.app/images/social-portfolio-x-1200x628.png",
     ],
   },
   robots: {
