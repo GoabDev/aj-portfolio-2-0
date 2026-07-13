@@ -13,12 +13,19 @@ const menuItems = [
   // { name: "Pricing", href: "#link" },
 ];
 
+const documentConfig = {
+  cv: { title: "Curriculum Vitae", url: "/docs/cv.pdf" },
+  resume: { title: "Resume", url: "/docs/resume.pdf" },
+  "Ajogu-Joseph": { title: "Resume", url: "/docs/Ajogu-Joseph.pdf" },
+} as const;
+
+type DocumentKey = keyof typeof documentConfig;
+
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
-  const [activeDocument, setActiveDocument] = React.useState<
-    "cv" | "resume" | null
-  >(null);
+  const [activeDocument, setActiveDocument] =
+    React.useState<DocumentKey | null>(null);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -32,15 +39,10 @@ export const HeroHeader = () => {
   //   menuState && setMenuState(false);
   // }
 
-  const openDocument = (document: "cv" | "resume") => {
+  const openDocument = (document: DocumentKey) => {
     setActiveDocument(document);
     setMenuState(false);
   };
-
-  const documentConfig = {
-    cv: { title: "Curriculum Vitae", url: "/docs/cv.pdf" },
-    resume: { title: "Resume", url: "/docs/resume.pdf" },
-  } as const;
 
   const selectedDocument =
     activeDocument === null ? null : documentConfig[activeDocument];
@@ -55,7 +57,7 @@ export const HeroHeader = () => {
           className={cn(
             "mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12",
             isScrolled &&
-              "bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5"
+              "bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5",
           )}
         >
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
@@ -111,18 +113,18 @@ export const HeroHeader = () => {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button
+                {/* <Button
                   variant="outline"
                   size="sm"
                   className={cn(isScrolled && "lg:hidden")}
                   onClick={() => openDocument("cv")}
                 >
                   <span>CV</span>
-                </Button>
+                </Button> */}
                 <Button
                   size="sm"
                   className={cn(isScrolled && "hidden")}
-                  onClick={() => openDocument("resume")}
+                  onClick={() => openDocument("Ajogu-Joseph")}
                 >
                   <span>Resume</span>
                 </Button>
