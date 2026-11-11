@@ -101,7 +101,7 @@ export default function HeroSection() {
                     />
                   </div>
                   <p className="text-base font-semibold text-primary md:text-lg">
-                    AjoguJoseph
+                    Ajogu Joseph Issac
                   </p>
                 </div> */}
                 <motion.p

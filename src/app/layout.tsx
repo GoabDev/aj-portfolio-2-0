@@ -21,21 +21,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ajogujoseph.vercel.app"),
   title: {
-    default: "Ajogu Joseph | Full-Stack & Frontend Developer",
-    template: "%s | Ajogu Joseph",
+    default: "Ajogu Joseph Issac | Full-Stack & Frontend Developer",
+    template: "%s | Ajogu Joseph Issac",
   },
   description:
-    "Portfolio of Ajogu Joseph, a Frontend and Full-Stack Developer building scalable web apps, internal business systems, automation tools, and modern product experiences.",
-  applicationName: "Ajogu Joseph Portfolio",
-  authors: [{ name: "Ajogu Joseph", url: "https://ajogujoseph.vercel.app" }],
-  creator: "Ajogu Joseph",
-  publisher: "Ajogu Joseph",
+    "Portfolio of Ajogu Joseph Issac, a Frontend and Full-Stack Developer building scalable web apps, internal business systems, automation tools, and modern product experiences.",
+  applicationName: "Ajogu Joseph Issac Portfolio",
+  authors: [{ name: "Ajogu Joseph Issac", url: "https://ajogujoseph.vercel.app" }],
+  creator: "Ajogu Joseph Issac",
+  publisher: "Ajogu Joseph Issac",
   category: "technology",
   alternates: {
     canonical: "https://ajogujoseph.vercel.app",
   },
   keywords: [
-    "Ajogu Joseph",
+    "Ajogu Joseph Issac",
     "Frontend Developer",
     "Full-Stack Developer",
     "Next.js Developer",
@@ -62,17 +62,17 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Ajogu Joseph | Full-Stack & Frontend Developer",
+    title: "Ajogu Joseph Issac | Full-Stack & Frontend Developer",
     description:
-      "Explore projects by Ajogu Joseph across internal enterprise systems, automation tools, and high-performance web interfaces.",
+      "Explore projects by Ajogu Joseph Issac across internal enterprise systems, automation tools, and high-performance web interfaces.",
     url: "https://ajogujoseph.vercel.app",
-    siteName: "Ajogu Joseph Portfolio",
+    siteName: "Ajogu Joseph Issac Portfolio",
     images: [
       {
         url: "https://ajogujoseph.vercel.app/images/social-portfolio-og-1200x630.jpg",
         width: 1200,
         height: 630,
-        alt: "Ajogu Joseph - Developer Portfolio",
+        alt: "Ajogu Joseph Issac - Developer Portfolio",
       },
     ],
     locale: "en-US",
@@ -80,9 +80,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ajogu Joseph | Full-Stack & Frontend Developer",
+    title: "Ajogu Joseph Issac | Full-Stack & Frontend Developer",
     description:
-      "Portfolio featuring web apps, internal systems, and automation projects by Ajogu Joseph.",
+      "Portfolio featuring web apps, internal systems, and automation projects by Ajogu Joseph Issac.",
     images: [
       "https://ajogujoseph.vercel.app/images/social-portfolio-x-1200x628.png",
     ],
@@ -102,8 +102,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#ffffff",
-  colorScheme: "light dark",
+  themeColor: "#244BFF",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
